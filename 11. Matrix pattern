@@ -18,7 +18,6 @@ public class Matrixpattern {
 			System.out.println();
 		}
 		
-
 	}
 
 }

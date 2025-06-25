@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class Matrixdiagonalelements {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int rows = sc.nextInt();
+		int cols = sc.nextInt();
+		int[][] arr = new int[rows][cols];
+		for(int i=0;i<=arr.length-1;i++) {
+			for(int j=0;j<=arr.length-1;j++) {
+				arr[i][j] = sc.nextInt();
+			}	
+		}
+		for(int i=0;i<=arr.length-1;i++) {
+			for(int j=0;j<=arr[0].length-1;j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println("Diagonal elements are: ");
+		for(int i=0;i<=arr.length-1;i++) {
+			for(int j=0;j<=arr[0].length-1;j++) {
+				if(rows == cols) {
+					if(i==j) {
+						System.out.print(arr[i][j]+" ");
+					}
+				}
+			}
+		
+		}
+		System.out.println();
+		for(int i=0;i<=arr.length-1;i++) {
+			for(int j=0;j<=arr[0].length-1;j++) {
+				if(rows==cols) {	
+				if(i+j == arr.length-1) {
+					System.out.print(arr[i][j]+" ");
+				}
+				}
+			}
+		}
+
+	}
+
+}
